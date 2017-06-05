@@ -15,6 +15,7 @@
 		CC549FBA1EE148C500930410 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC549FB81EE148C500930410 /* LaunchScreen.storyboard */; };
 		CC549FC51EE148C500930410 /* UIBezierShapeLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC549FC41EE148C500930410 /* UIBezierShapeLayerTests.m */; };
 		CC549FD01EE148C500930410 /* UIBezierShapeLayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC549FCF1EE148C500930410 /* UIBezierShapeLayerUITests.m */; };
+		CC549FDF1EE15FF200930410 /* BeazView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC549FDE1EE15FF200930410 /* BeazView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		CC549FCB1EE148C500930410 /* UIBezierShapeLayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIBezierShapeLayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC549FCF1EE148C500930410 /* UIBezierShapeLayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIBezierShapeLayerUITests.m; sourceTree = "<group>"; };
 		CC549FD11EE148C500930410 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC549FDD1EE15FF200930410 /* BeazView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeazView.h; sourceTree = "<group>"; };
+		CC549FDE1EE15FF200930410 /* BeazView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeazView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				CC549FAE1EE148C500930410 /* AppDelegate.m */,
 				CC549FB01EE148C500930410 /* ViewController.h */,
 				CC549FB11EE148C500930410 /* ViewController.m */,
+				CC549FDD1EE15FF200930410 /* BeazView.h */,
+				CC549FDE1EE15FF200930410 /* BeazView.m */,
 				CC549FB31EE148C500930410 /* Main.storyboard */,
 				CC549FB61EE148C500930410 /* Assets.xcassets */,
 				CC549FB81EE148C500930410 /* LaunchScreen.storyboard */,
@@ -278,6 +283,7 @@
 			files = (
 				CC549FB21EE148C500930410 /* ViewController.m in Sources */,
 				CC549FAF1EE148C500930410 /* AppDelegate.m in Sources */,
+				CC549FDF1EE15FF200930410 /* BeazView.m in Sources */,
 				CC549FAC1EE148C400930410 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
