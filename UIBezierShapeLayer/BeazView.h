@@ -16,9 +16,11 @@ typedef void(^clickStringBlock)(NSString * string);
 @property(strong,nonatomic)CAShapeLayer *shaperLayer4;
 
 @property(strong,nonatomic)UILabel *title ;
-;
 
 
+- (void)showToView:(UIView *)pointView;
+
++ (instancetype)popoverView;
 
 @property (nonatomic,copy) clickStringBlock stringBlock;
 

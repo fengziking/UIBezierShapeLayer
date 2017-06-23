@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "UIView+Frame.h"
+
 #import "BeazView.h"
 @interface ViewController (){
     UIBezierPath *bezierPath4;
@@ -14,6 +16,7 @@
     UILabel *title ;
     
     BeazView *view;
+    UIButton *btn;
 }
 
 @end
@@ -81,8 +84,8 @@
 //    title.textColor = [UIColor redColor];
 //    [self.view addSubview:title];
     
-    UIButton *btn = [UIButton new];
-    btn.frame =CGRectMake(10, 150, self.view.frame.size.width-20, 100);
+    btn = [UIButton new];
+    btn.frame =CGRectMake(10, 150, 300, 100);
     [btn setTitle:@"点一点" forState:(UIControlStateNormal)];
     [btn setTitleColor:[UIColor blueColor] forState:(UIControlStateNormal)];
     btn.backgroundColor = [UIColor purpleColor];
@@ -91,19 +94,15 @@
     
     
 }
--(void)clcik1{
-    
-    
-    NSLog(@"13213");
-    
-    
-}
+
 -(void)clcik{
-    view = [[BeazView alloc]initWithFrame:CGRectMake(10, 500, self.view.frame.size.width-20, 120)];
+    view = [BeazView popoverView];
     view.stringBlock= ^(NSString *strig){
         NSLog(@"strig-------%@",strig);
     };
-    
+  
+    [view showToView:btn];
+
     [view show];
 
     
